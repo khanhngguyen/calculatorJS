@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family:'PT Mono', Courier, monospace;
+    font-weight: normal;
+}
+
+body {
+    background-color: #e8eaeb;
+    padding: 70px 0;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #364048;
+    margin: auto;
+    width: max-content;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px
+                rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.calculator-grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 75px);
+}
+
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: #fcf9f8;
+}
+
+.calculator-grid > button.operands {
+    background-color: #8585a0;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
+                -1px -1px 3px rgba(255, 255, 255, 0.3);}
+
+.calculator-grid > button.operands:hover {
+    box-shadow: inset 9px 9px 18px #76768e,
+                inset -9px -9px 18px #9494b2;
+}
+
+.calculator-grid > button.number {
+    background-color: #d4ced1;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
+                -1px -1px 3px rgba(255, 255, 255, 0.3);
+    font-size: 2.5rem;
+}
+
+.calculator-grid > button.number:hover {
+    box-shadow: inset 9px 9px 18px #bdb7ba,
+                inset -9px -9px 18px #ebe5e8;
+}
+
+.calculator-grid > button.equal {
+    background-color: #d86811;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
+                -1px -1px 3px rgba(255, 255, 255, 0.3);}
+
+.calculator-grid > button.equal:hover {
+    box-shadow: inset 9px 9px 18px #c05d0f,
+                inset -9px -9px 18px #f07313;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: #364048;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #323c46, #2a323b);
+    box-shadow:  5px 5px 20px #242b31,
+                 -5px -5px 20px #3a4551;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: #767c83;
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: #d2d8df;
+    font-size: 2.5rem;
+}
