@@ -40,12 +40,12 @@ body {
     color: #fcf9f8;
 }
 
-.calculator-grid > button.operands {
+.calculator-grid > button.operand {
     background-color: #8585a0;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
                 -1px -1px 3px rgba(255, 255, 255, 0.3);}
 
-.calculator-grid > button.operands:hover {
+.calculator-grid > button.operand:hover {
     box-shadow: inset 9px 9px 18px #76768e,
                 inset -9px -9px 18px #9494b2;
 }
