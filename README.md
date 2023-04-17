@@ -8,6 +8,7 @@ Features:
 
 
 ### Demo
+[demo page here](https://khanhngguyen.github.io/calculatorJS/)
 ![demo gif](./demo.gif)
 
 ### Development phases
